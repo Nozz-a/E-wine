@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <!-- HEADER -->
+
+  <head>
+    <script src="https://kit.fontawesome.com/45e38e596f.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-Alsatian vineyard</title>
+    <link rel="stylesheet" href="css/style-file.css">
+
+    <div class="header" id="myHeader">
+
+      <nav>
+        <button onclick="myFunction()">Click on me!</button>
+        <ul>
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="ourteam.html" class="active2">Our Team</a></li>
+          <li><a href="contactus.html">Contact Us</a></li>
+        </ul>
+      </nav>
+
+    </div>
+    <div><p id="clic" onclick="myFunction()"></p></div>
+  </head>
+
+
+
+  
+      <!-- MAIN -->
+  <body>
+      <main>
+        <div class="title-slider">
+          <div><h1 class="title-slider-contact">Contact us</h1></div>
+          <div class="description-contact">
+              <p>For a specific request, do not hesitate to write to us using our form below.
+                <br> customer service will process your request as soon as possible.
+                </p>
+          </div>
+        </div>
+
+      <form name="emailform" action="#" onsubmit="validateForm()" method="post">
+
+
+        <fieldset>
+
+          <label for='name'>Name</label>
+          <input type='text' id = 'name' name = 'name'><br/>
+
+
+          <label>Email: <input type='email' name = 'email' placeholder="your@email.com"></label><br/>
+
+          <label for='message'>Your message</label>
+          <textarea type='text' id = 'message' name = 'message'></textarea>
+
+          <input type="submit" value="Submit">
+
+        </fieldset>
+
+      </form>
+    </main>
+    
+
+    <script>
+
+      window.onscroll = function() {myFunction()};
+
+      var header = document.getElementById("myHeader");
+
+      var sticky = header.offsetTop;
+      function myFunction() {
+        if (window.pageYOffset > sticky) {
+          header.classList.add("sticky");
+        } else {
+          header.classList.remove("sticky");
+        }
+      }
+    </script>
+
+    <script type="text/javascript">
+
+      function validateForm() {
+      var email = document.forms.emailform["email"].value;
+      if (email == "") {
+        alert("insert a valid email");
+        return false;
+      }
+      }
+
+    </script>
+
+<!-- <script>
+      function myFunction() {
+        var person = prompt("Please enter your name");
+        if (person != null) {
+          document.getElementById("clic").innerHTML =
+          " Welcome to my page " + person ;
+        }
+        else {
+          document.getElementById("clic").innerHTML =
+          " Welcome to my page ";
+        }
+
+      }
+    </script>
+-->
+    
+
+
+  </body>
+
+  <!-- FOOTER -->
+
+  <footer>
+  
+
+    <div class="contact">
+  
+      <div class="contact1">
+        <i class="fas fa-map-marker-alt" style="color:white"></i>
+        <div class="adresse">
+        <p>15, allée des vins blancs - 67200 STRASBOURG</p>
+        </div>
+      </div>
+  
+      <div class="contact2">
+        <i class="fas fa-envelope" style="color:white"></i>
+        <div class="mail">
+        <p>e-wine@contact.com</p>
+        </div>
+      </div>
+  
+    </div>
+    
+    <div class="map">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d84484.10413662349!2d7.692054796446877!3d48.569092311654465!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4796c84ad320ec67%3A0x6d74978f33eeb6ba!2sMus%C3%A9e%20d&#39;Art%20Moderne%20et%20Contemporain%20de%20Strasbourg!5e0!3m2!1sfr!2sfr!4v1618249818677!5m2!1sfr!2sfr" 
+      width="1500" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+  
+    <div class="copyright">
+      <p class="copy">All rights reserved. Designed by Naziha BOUZAIANE</p>
+    </div>
+  
+  
+  </footer>
+
+
+</html>
