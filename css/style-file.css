@@ -4,6 +4,7 @@
   /* letter-spacing: 0.05rem; */
   line-height: 1.5rem;
   /* font-weight: 900; */
+  
 }
 
 /* CSS - INDEX */
@@ -26,7 +27,7 @@
   list-style-type: none;
   flex-direction: column;
   text-align: left;
-  margin-left: 1rem;
+  /* margin-left: 1rem; */
   font-weight: 500;
   margin: 1% auto;
   width: 100%;
@@ -120,7 +121,7 @@ li:hover{
   } */
 
   #myLinks > li > a {
-    width: 75%;
+    width: 80%;
   }
 
   nav {
@@ -176,7 +177,7 @@ li:hover{
   }
 
   .slider > .description {
-    font-family: Roboto light;
+    font-family: Roboto;
     /* font-size: 0.8rem; */
     color: black;
     display: block;
@@ -265,7 +266,7 @@ li:hover{
   }
 
   .description {
-    font-family: Roboto light;
+    font-family: Roboto;
     font-size: 1rem;
     color: black;
     display: block;
@@ -413,7 +414,7 @@ img {
   }
 
   .contact {
-    font-family: Roboto light;
+    font-family: Roboto;
     font-size: 0.8rem;
     color: white;
     width: 100%;
@@ -426,7 +427,7 @@ img {
   
   .copy {
     padding: 3%;
-    font-family: Roboto light;
+    font-family: Roboto;
     font-size: 12px;
     color: white;
     background-color: black;
@@ -465,7 +466,7 @@ img {
 
   
   .contact {
-    font-family: Roboto light;
+    font-family: Roboto;
     font-size: 14px;
     color: white;
     display: inline-block;
@@ -487,7 +488,7 @@ img {
   }
 
   .copy {
-    font-family: Roboto light;
+    font-family: Roboto;
     font-size: 12px;
     color: white;
     text-align: center;
@@ -561,7 +562,6 @@ img {
 
 /* .description-ourteam {
 
-  font-family: Roboto light;
   font-size: 18px;
   color: black;
   display: block;
@@ -595,15 +595,14 @@ img {
   .bloc-icon1 {
 
   background-color: white;
-  font-family: Roboto light;
   letter-spacing: 0.05rem;
-  line-height: 1rem;
-  font-size: 0.8rem;
+  font-family: Roboto;
+  line-height: 1.5rem;
   border-radius: 5px;
   border-color: black;
   border: solid 1px;
-  height: 250px;
-  width: 20%;
+  height: 20rem;
+  width: 25%;
   display: inline-block;
   margin: 1%;
   vertical-align: top;
@@ -615,7 +614,7 @@ img {
   text-align: center;
   display: inline-block;
   padding: 1%;
-  height: 400px;
+  /* height: 400px; */
   left: 50%;
   top: 10%;
   margin: 1%;
@@ -632,16 +631,16 @@ img {
   .bloc-icon1 {
 
     /* background-color: white; */
-    font-family: Roboto light;
     letter-spacing: 0.05rem;
-    line-height: 1rem;
+    font-family: Roboto;
+    line-height: 1.5rem;
     font-weight: 500;
-    font-size: 0.6rem;
+    font-size: 0.9rem;
     border-radius: 5px;
     border-color: black;
     border: solid 1px;
-    height: 15rem;
-    width: 8rem;
+    height: 20%;
+    width: 20rem;
     display: inline-block;
     margin: 1%;
     vertical-align: top;
@@ -686,7 +685,7 @@ img {
   }
   
   .description-contact {
-    font-family: Roboto light;
+    font-family: Roboto;
     font-size: 1rem;
     color: black;
     display: block;
@@ -706,7 +705,7 @@ img {
 @media screen and (max-width: 800px) {
 
   .description-contact {
-    font-family: Roboto light;
+    font-family: Roboto;
     font-size: 0.8rem;
     color: black;
     display: block;
@@ -751,7 +750,7 @@ img {
 } */
 
 form {
-  width: 80%;
+  width: 90%;
   margin: 2rem auto;
   justify-content: center;
   align-items: center;
@@ -765,7 +764,8 @@ form {
 label {
   display: block;
   color: black;
-  font-size: 0.6rem;
+  font-size: 1rem;
+  padding-top: 1rem;
 }
 
 #your_message{
@@ -787,6 +787,12 @@ label {
 #email_input {
   display: inline-block;
   width: 100%;
+  height: 2rem;
+
+}
+
+input {
+  height: 2rem;
 }
 
 textarea {
