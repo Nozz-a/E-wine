@@ -2,28 +2,45 @@
 <html lang="en">
   <head>
     <script src="https://kit.fontawesome.com/45e38e596f.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>E-Alsatian vineyard</title>
+    <title>E-Wine</title>
     <link rel="stylesheet" href="css/style-file.css">
+    
   </head>
+
 
     <!-- HEADER -->
     <div class="header" id="myHeader">
       <nav>
+        <p class="logo_design">E-Wine</p>
+            <div class="menu">
+              <a href="javascript:void(0);" class="icon" onclick="myFunctionMenu()">
+                <i class="fa fa-bars"></i>
+              </a>
+            </div>
           <ul>
-            <li><a href="index.html" class="active">Home</a></li>
-            <li><a href="ourteam.html" class="active2">Our Team</a></li>
-            <li><a href="contactus.html">Contact Us</a></li>
+
+            <div id="myLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="ourteam.html">Our Team</a></li>
+                <li><a href="contactus.html">Contact Us</a></li>
+            </div>          
+            
           </ul>
+          
       </nav>
     </div>
 
     <!-- MAIN -->
     <main>
-      <div class="title-slider">
+      <div class="slider">
         <div><h1 class="title-slider-ourteam">Our Team</h1></div>
-        <div class="description-ourteam">
+        <div class="description">
             <p>Composed of sommeliers trained in our Alsatian vineyard, <br> our team is growing more and more in order to offer you the best services.</p>
         </div>
       </div>
@@ -32,19 +49,19 @@
 
         <div class="bloc-icon1">
           <div><i class='fas fa-user-tie' style='font-size:36px;color:black'></i></div>
-          <div><h1 class="mytitle">Advice</h1></div>
+          <div class="mytitle">Advice</div>
           <div><p>Our experts advise you and offer you the best wine from the region according to your needs and following a personalized estimate.</p></div>
         </div>
 
         <div class="bloc-icon1">
           <div><i class='fas fa-star' style='font-size:36px;color:black'></i></div>
-          <div><h1 class="mytitle">Tasting</h1></div>
+          <div class="mytitle">Tasting</div>
           <div><p>A tasting session of our selection is offered to you at our headquarters or at the location of your choice. This is accompanied by cheese and charcuterie proposals for optimal tasting.</p></div>
         </div>
 
         <div class="bloc-icon1">
           <div><i class='fas fa-clipboard-check' style='font-size:36px;color:black'></i></div>
-          <div><h1 class="mytitle">Management</h1></div>
+          <div class="mytitle">Management</div>
           <div><p>Our organization team takes care of the delivery of your ordersand in the best conditions in order to guarantee you an irreproachable quality of service.</p></div>
         </div>
 
@@ -53,19 +70,30 @@
     </main>
 
     <script>
-
       window.onscroll = function() {myFunction()};
-
-      var header = document.getElementById("myHeader");
-
-      var sticky = header.offsetTop;
+      
+      var stickHeader = document.getElementById("myHeader");
+      var sticky = stickHeader.offsetTop;
+      
       function myFunction() {
-        if (window.pageYOffset > sticky) {
-          header.classList.add("sticky");
+        if (window.pageYOffset >= sticky) {
+          stickHeader.classList.add("sticky")
         } else {
-          header.classList.remove("sticky");
+          stickHeader.classList.remove("sticky");
         }
       }
+    </script>
+  
+    
+    <script>
+        function myFunctionMenu() {
+          var x = document.getElementById("myLinks");
+          if (x.style.display === "block") {
+            x.style.display = "none";
+          } else {
+            x.style.display = "block";
+          }
+        }
     </script>
 
     
@@ -96,7 +124,7 @@
     
     <div class="map">
       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d84484.10413662349!2d7.692054796446877!3d48.569092311654465!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4796c84ad320ec67%3A0x6d74978f33eeb6ba!2sMus%C3%A9e%20d&#39;Art%20Moderne%20et%20Contemporain%20de%20Strasbourg!5e0!3m2!1sfr!2sfr!4v1618249818677!5m2!1sfr!2sfr" 
-      width="1500" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
     </div>
   
     <div class="copyright">
