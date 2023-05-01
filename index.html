@@ -25,9 +25,10 @@
                 <i class="fa fa-bars"></i>
               </a>
             </div>
+
           <ul>
 
-            <div id="myLinks">
+            <div class= "topnav" id="myLinks">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="ourteam.html">Our Team</a></li>
                 <li><a href="contactus.html">Contact Us</a></li>
@@ -141,10 +142,10 @@
   <script>
       function myFunctionMenu() {
         var x = document.getElementById("myLinks");
-        if (x.style.display === "none") {
-          x.style.display = "block";
-        } else {
+        if (x.style.display === "block") {
           x.style.display = "none";
+        } else {
+          x.style.display = "block";
         }
       }
 
